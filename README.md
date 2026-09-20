@@ -7,7 +7,7 @@ A dependency-free portfolio site built from Ruknudheen S's resume (Data Analyst
 
 ```
 portfolio/
-├── index (1).html           # Page markup and styles
+├── index.html               # Page markup and styles
 ├── portfolio-app.js         # Module entry point
 ├── portfolio-data.js        # Resume, project and contact configuration
 ├── portfolio-*.js           # Feature modules
