@@ -71,4 +71,5 @@ export const resumeData = {
   ],
 };
 
-export const CONTACT_FORM_ENDPOINT = "";
+export const CONTACT_FORM_ENDPOINT =
+  "https://formsubmit.co/ajax/Ruknudheen.s@gmail.com";

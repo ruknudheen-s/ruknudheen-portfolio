@@ -27,8 +27,16 @@ export function initContactForm(endpoint) {
       try {
         const response = await fetch(endpoint, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(values),
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            Accept: "application/json",
+          },
+          body: new URLSearchParams({
+            ...values,
+            _subject: `Portfolio contact: ${values.subject}`,
+            _captcha: "false",
+            _template: "table",
+          }),
         });
         if (!response.ok)
           throw new Error(`Contact form request failed: ${response.status}`);
